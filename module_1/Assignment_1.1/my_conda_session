@@ -1,0 +1,341 @@
+Script started on 2022-07-28 10:37:53+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+(base) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda create --name snowflakes bu[Kiopython
+Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | / - \ done
+
+## Package Plan ##
+
+  environment location: /home/janaki/miniconda3/envs/snowflakes
+
+  added / updated specs:
+    - biopython
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _openmp_mutex-5.1          |            1_gnu          21 KB
+    biopython-1.78             |  py310h7f8727e_0         2.4 MB
+    bzip2-1.0.8                |       h7b6447c_0          78 KB
+    certifi-2022.6.15          |  py310h06a4308_0         153 KB
+    ld_impl_linux-64-2.38      |       h1181459_1         654 KB
+    libgcc-ng-11.2.0           |       h1234567_1         5.3 MB
+    libgomp-11.2.0             |       h1234567_1         474 KB
+    libstdcxx-ng-11.2.0        |       h1234567_1         4.7 MB
+    libuuid-1.0.3              |       h7f8727e_2          17 KB
+    mkl-service-2.4.0          |  py310h7f8727e_0         177 KB
+    mkl_fft-1.3.1              |  py310hd6ae3a3_0         567 KB
+    mkl_random-1.2.2           |  py310h00e6091_0        1009 KB
+    ncurses-6.3                |       h5eee18b_3         781 KB
+    numpy-1.22.3               |  py310hfa59a62_0          10 KB
+    numpy-base-1.22.3          |  py310h9585f30_0        11.8 MB
+    pip-22.1.2                 |  py310h06a4308_0         2.5 MB
+    python-3.10.4              |       h12debd9_0        24.2 MB
+    setuptools-61.2.0          |  py310h06a4308_0        1019 KB
+    sqlite-3.38.5              |       hc218d9a_0         1.0 MB
+    tk-8.6.12                  |       h1ccaba5_0         3.0 MB
+    xz-5.2.5                   |       h7f8727e_1         339 KB
+    zlib-1.2.12                |       h7f8727e_2         106 KB
+    ------------------------------------------------------------
+                                           Total:        60.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  biopython          pkgs/main/linux-64::biopython-1.78-py310h7f8727e_0
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2022.07.19-h06a4308_0
+  certifi            pkgs/main/linux-64::certifi-2022.6.15-py310h06a4308_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2021.4.0-h06a4308_3561
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  libuuid            pkgs/main/linux-64::libuuid-1.0.3-h7f8727e_2
+  mkl                pkgs/main/linux-64::mkl-2021.4.0-h06a4308_640
+  mkl-service        pkgs/main/linux-64::mkl-service-2.4.0-py310h7f8727e_0
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.3.1-py310hd6ae3a3_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.2.2-py310h00e6091_0
+  ncurses            pkgs/main/linux-64::ncurses-6.3-h5eee18b_3
+  numpy              pkgs/main/linux-64::numpy-1.22.3-py310hfa59a62_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.22.3-py310h9585f30_0
+  openssl            pkgs/main/linux-64::openssl-1.1.1q-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-22.1.2-py310h06a4308_0
+  python             pkgs/main/linux-64::python-3.10.4-h12debd9_0
+  readline           pkgs/main/linux-64::readline-8.1.2-h7f8727e_1
+  setuptools         pkgs/main/linux-64::setuptools-61.2.0-py310h06a4308_0
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_1
+  sqlite             pkgs/main/linux-64::sqlite-3.38.5-hc218d9a_0
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0
+  tzdata             pkgs/main/noarch::tzdata-2022a-hda174b7_0
+  wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7f8727e_1
+  zlib               pkgs/main/linux-64::zlib-1.2.12-h7f8727e_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+libgcc-ng-11.2.0     | 5.3 MB    |                                                                               |   0% libgcc-ng-11.2.0     | 5.3 MB    | 2                                                                             |   0% libgcc-ng-11.2.0     | 5.3 MB    | #5                                                                            |   2% libgcc-ng-11.2.0     | 5.3 MB    | #######8                                                                      |  10% libgcc-ng-11.2.0     | 5.3 MB    | #################3                                                            |  23% libgcc-ng-11.2.0     | 5.3 MB    | ##################################6                                           |  45% libgcc-ng-11.2.0     | 5.3 MB    | #######################################################3                      |  72% libgcc-ng-11.2.0     | 5.3 MB    | ############################################################################# | 100% libgcc-ng-11.2.0     | 5.3 MB    | ############################################################################# | 100% 
+zlib-1.2.12          | 106 KB    |                                                                               |   0% zlib-1.2.12          | 106 KB    | ###########6                                                                  |  15% zlib-1.2.12          | 106 KB    | ############################################################################# | 100% 
+sqlite-3.38.5        | 1.0 MB    |                                                                               |   0% sqlite-3.38.5        | 1.0 MB    | #####9                                                                        |   8% sqlite-3.38.5        | 1.0 MB    | ############################################################################# | 100% 
+libuuid-1.0.3        | 17 KB     |                                                                               |   0% libuuid-1.0.3        | 17 KB     | ########################################################################6     |  94% libuuid-1.0.3        | 17 KB     | ############################################################################# | 100% 
+mkl_random-1.2.2     | 1009 KB   |                                                                               |   0% mkl_random-1.2.2     | 1009 KB   | #2                                                                            |   2% mkl_random-1.2.2     | 1009 KB   | ############################################################################# | 100% 
+tk-8.6.12            | 3.0 MB    |                                                                               |   0% tk-8.6.12            | 3.0 MB    | 3                                                                             |   1% tk-8.6.12            | 3.0 MB    | #############################4                                                |  38% tk-8.6.12            | 3.0 MB    | #############################################################2                |  80% tk-8.6.12            | 3.0 MB    | ############################################################################# | 100% 
+pip-22.1.2           | 2.5 MB    |                                                                               |   0% pip-22.1.2           | 2.5 MB    | 4                                                                             |   1% pip-22.1.2           | 2.5 MB    | ##################################4                                           |  45% pip-22.1.2           | 2.5 MB    | ###################################################################3          |  88% pip-22.1.2           | 2.5 MB    | ############################################################################# | 100% 
+bzip2-1.0.8          | 78 KB     |                                                                               |   0% bzip2-1.0.8          | 78 KB     | ##############################################################9               |  82% bzip2-1.0.8          | 78 KB     | ############################################################################# | 100% 
+xz-5.2.5             | 339 KB    |                                                                               |   0% xz-5.2.5             | 339 KB    | ################################6                                             |  42% xz-5.2.5             | 339 KB    | ############################################################################# | 100% 
+ncurses-6.3          | 781 KB    |                                                                               |   0% ncurses-6.3          | 781 KB    | #5                                                                            |   2% ncurses-6.3          | 781 KB    | ############################################################################# | 100% 
+ld_impl_linux-64-2.3 | 654 KB    |                                                                               |   0% ld_impl_linux-64-2.3 | 654 KB    | #8                                                                            |   2% ld_impl_linux-64-2.3 | 654 KB    | #########4                                                                    |  12% ld_impl_linux-64-2.3 | 654 KB    | ###########3                                                                  |  15% ld_impl_linux-64-2.3 | 654 KB    | #############1                                                                |  17% ld_impl_linux-64-2.3 | 654 KB    | ###############                                                               |  20% ld_impl_linux-64-2.3 | 654 KB    | ################9                                                             |  22% ld_impl_linux-64-2.3 | 654 KB    | ##################8                                                           |  24% ld_impl_linux-64-2.3 | 654 KB    | ####################7                                                         |  27% ld_impl_linux-64-2.3 | 654 KB    | ######################6                                                       |  29% ld_impl_linux-64-2.3 | 654 KB    | ########################5                                                     |  32% ld_impl_linux-64-2.3 | 654 KB    | ############################2                                                 |  37% ld_impl_linux-64-2.3 | 654 KB    | ##############################1                                               |  39% ld_impl_linux-64-2.3 | 654 KB    | ################################                                              |  42% ld_impl_linux-64-2.3 | 654 KB    | ###################################8                                          |  47% ld_impl_linux-64-2.3 | 654 KB    | #####################################7                                        |  49% ld_impl_linux-64-2.3 | 654 KB    | #######################################5                                      |  51% ld_impl_linux-64-2.3 | 654 KB    | #########################################4                                    |  54% ld_impl_linux-64-2.3 | 654 KB    | ###########################################3                                  |  56% ld_impl_linux-64-2.3 | 654 KB    | #############################################2                                |  59% ld_impl_linux-64-2.3 | 654 KB    | ###############################################1                              |  61% ld_impl_linux-64-2.3 | 654 KB    | #################################################                             |  64% ld_impl_linux-64-2.3 | 654 KB    | ##################################################9                           |  66% ld_impl_linux-64-2.3 | 654 KB    | ######################################################6                       |  71% ld_impl_linux-64-2.3 | 654 KB    | ##########################################################4                   |  76% ld_impl_linux-64-2.3 | 654 KB    | ##############################################################2               |  81% ld_impl_linux-64-2.3 | 654 KB    | #################################################################9            |  86% ld_impl_linux-64-2.3 | 654 KB    | #####################################################################7        |  91% ld_impl_linux-64-2.3 | 654 KB    | #########################################################################5    |  95% ld_impl_linux-64-2.3 | 654 KB    | ############################################################################# | 100% 
+libgomp-11.2.0       | 474 KB    |                                                                               |   0% libgomp-11.2.0       | 474 KB    | ##6                                                                           |   3% libgomp-11.2.0       | 474 KB    | #######8                                                                      |  10% libgomp-11.2.0       | 474 KB    | #############                                                                 |  17% libgomp-11.2.0       | 474 KB    | ####################8                                                         |  27% libgomp-11.2.0       | 474 KB    | ############################6                                                 |  37% libgomp-11.2.0       | 474 KB    | ####################################4                                         |  47% libgomp-11.2.0       | 474 KB    | ############################################2                                 |  57% libgomp-11.2.0       | 474 KB    | ####################################################                          |  68% libgomp-11.2.0       | 474 KB    | ###########################################################8                  |  78% libgomp-11.2.0       | 474 KB    | ###################################################################6          |  88% libgomp-11.2.0       | 474 KB    | ############################################################################# | 100% libgomp-11.2.0       | 474 KB    | ############################################################################# | 100% 
+setuptools-61.2.0    | 1019 KB   |                                                                               |   0% setuptools-61.2.0    | 1019 KB   | #2                                                                            |   2% setuptools-61.2.0    | 1019 KB   | ####8                                                                         |   6% setuptools-61.2.0    | 1019 KB   | #########6                                                                    |  13% setuptools-61.2.0    | 1019 KB   | #############2                                                                |  17% setuptools-61.2.0    | 1019 KB   | ##################1                                                           |  24% setuptools-61.2.0    | 1019 KB   | ######################9                                                       |  30% setuptools-61.2.0    | 1019 KB   | ###########################7                                                  |  36% setuptools-61.2.0    | 1019 KB   | ################################6                                             |  42% setuptools-61.2.0    | 1019 KB   | ######################################6                                       |  50% setuptools-61.2.0    | 1019 KB   | ###########################################5                                  |  57% setuptools-61.2.0    | 1019 KB   | #################################################5                            |  64% setuptools-61.2.0    | 1019 KB   | ######################################################3                       |  71% setuptools-61.2.0    | 1019 KB   | ############################################################4                 |  78% setuptools-61.2.0    | 1019 KB   | ##################################################################4           |  86% setuptools-61.2.0    | 1019 KB   | ########################################################################5     |  94% setuptools-61.2.0    | 1019 KB   | ############################################################################# | 100% 
+numpy-base-1.22.3    | 11.8 MB   |                                                                               |   0% numpy-base-1.22.3    | 11.8 MB   | 1                                                                             |   0% numpy-base-1.22.3    | 11.8 MB   | 6                                                                             |   1% numpy-base-1.22.3    | 11.8 MB   | #1                                                                            |   1% numpy-base-1.22.3    | 11.8 MB   | #7                                                                            |   2% numpy-base-1.22.3    | 11.8 MB   | ##3                                                                           |   3% numpy-base-1.22.3    | 11.8 MB   | ##9                                                                           |   4% numpy-base-1.22.3    | 11.8 MB   | ###5                                                                          |   5% numpy-base-1.22.3    | 11.8 MB   | ####2                                                                         |   6% numpy-base-1.22.3    | 11.8 MB   | #####                                                                         |   7% numpy-base-1.22.3    | 11.8 MB   | #####6                                                                        |   7% numpy-base-1.22.3    | 11.8 MB   | ######4                                                                       |   8% numpy-base-1.22.3    | 11.8 MB   | #######2                                                                      |   9% numpy-base-1.22.3    | 11.8 MB   | ########1                                                                     |  11% numpy-base-1.22.3    | 11.8 MB   | #########                                                                     |  12% numpy-base-1.22.3    | 11.8 MB   | #########8                                                                    |  13% numpy-base-1.22.3    | 11.8 MB   | ##########6                                                                   |  14% numpy-base-1.22.3    | 11.8 MB   | ###########4                                                                  |  15% numpy-base-1.22.3    | 11.8 MB   | ############4                                                                 |  16% numpy-base-1.22.3    | 11.8 MB   | #############3                                                                |  17% numpy-base-1.22.3    | 11.8 MB   | ##############3                                                               |  19% numpy-base-1.22.3    | 11.8 MB   | ###############3                                                              |  20% numpy-base-1.22.3    | 11.8 MB   | ################3                                                             |  21% numpy-base-1.22.3    | 11.8 MB   | #################3                                                            |  23% numpy-base-1.22.3    | 11.8 MB   | ##################5                                                           |  24% numpy-base-1.22.3    | 11.8 MB   | ###################6                                                          |  26% numpy-base-1.22.3    | 11.8 MB   | ####################7                                                         |  27% numpy-base-1.22.3    | 11.8 MB   | #####################8                                                        |  28% numpy-base-1.22.3    | 11.8 MB   | #######################1                                                      |  30% numpy-base-1.22.3    | 11.8 MB   | ########################3                                                     |  32% numpy-base-1.22.3    | 11.8 MB   | #########################7                                                    |  33% numpy-base-1.22.3    | 11.8 MB   | ###########################2                                                  |  35% numpy-base-1.22.3    | 11.8 MB   | ############################5                                                 |  37% numpy-base-1.22.3    | 11.8 MB   | ##############################                                                |  39% numpy-base-1.22.3    | 11.8 MB   | ###############################4                                              |  41% numpy-base-1.22.3    | 11.8 MB   | ################################9                                             |  43% numpy-base-1.22.3    | 11.8 MB   | ##################################5                                           |  45% numpy-base-1.22.3    | 11.8 MB   | ####################################2                                         |  47% numpy-base-1.22.3    | 11.8 MB   | #####################################7                                        |  49% numpy-base-1.22.3    | 11.8 MB   | #######################################5                                      |  51% numpy-base-1.22.3    | 11.8 MB   | #########################################3                                    |  54% numpy-base-1.22.3    | 11.8 MB   | ###########################################                                   |  56% numpy-base-1.22.3    | 11.8 MB   | #############################################1                                |  59% numpy-base-1.22.3    | 11.8 MB   | ###############################################                               |  61% numpy-base-1.22.3    | 11.8 MB   | #################################################1                            |  64% numpy-base-1.22.3    | 11.8 MB   | ###################################################1                          |  66% numpy-base-1.22.3    | 11.8 MB   | #####################################################5                        |  70% numpy-base-1.22.3    | 11.8 MB   | #######################################################9                      |  73% numpy-base-1.22.3    | 11.8 MB   | ##########################################################2                   |  76% numpy-base-1.22.3    | 11.8 MB   | ############################################################5                 |  79% numpy-base-1.22.3    | 11.8 MB   | ###############################################################2              |  82% numpy-base-1.22.3    | 11.8 MB   | #################################################################6            |  85% numpy-base-1.22.3    | 11.8 MB   | ####################################################################4         |  89% numpy-base-1.22.3    | 11.8 MB   | #######################################################################1      |  92% numpy-base-1.22.3    | 11.8 MB   | ##########################################################################    |  96% numpy-base-1.22.3    | 11.8 MB   | ############################################################################# | 100% numpy-base-1.22.3    | 11.8 MB   | ############################################################################# | 100% 
+libstdcxx-ng-11.2.0  | 4.7 MB    |                                                                               |   0% libstdcxx-ng-11.2.0  | 4.7 MB    | 2                                                                             |   0% libstdcxx-ng-11.2.0  | 4.7 MB    | #######9                                                                      |  10% libstdcxx-ng-11.2.0  | 4.7 MB    | ################1                                                             |  21% libstdcxx-ng-11.2.0  | 4.7 MB    | #########################1                                                    |  33% libstdcxx-ng-11.2.0  | 4.7 MB    | ##################################1                                           |  44% libstdcxx-ng-11.2.0  | 4.7 MB    | ###########################################                                   |  56% libstdcxx-ng-11.2.0  | 4.7 MB    | ####################################################                          |  68% libstdcxx-ng-11.2.0  | 4.7 MB    | ##############################################################8               |  82% libstdcxx-ng-11.2.0  | 4.7 MB    | ########################################################################3     |  94% libstdcxx-ng-11.2.0  | 4.7 MB    | ############################################################################# | 100% 
+mkl_fft-1.3.1        | 567 KB    |                                                                               |   0% mkl_fft-1.3.1        | 567 KB    | ##1                                                                           |   3% mkl_fft-1.3.1        | 567 KB    | ############################################################################# | 100% mkl_fft-1.3.1        | 567 KB    | ############################################################################# | 100% 
+mkl-service-2.4.0    | 177 KB    |                                                                               |   0% mkl-service-2.4.0    | 177 KB    | ###########################7                                                  |  36% mkl-service-2.4.0    | 177 KB    | ############################################################################# | 100% 
+biopython-1.78       | 2.4 MB    |                                                                               |   0% biopython-1.78       | 2.4 MB    | 5                                                                             |   1% biopython-1.78       | 2.4 MB    | #####################8                                                        |  28% biopython-1.78       | 2.4 MB    | #############################################2                                |  59% biopython-1.78       | 2.4 MB    | ####################################################################6         |  89% biopython-1.78       | 2.4 MB    | ############################################################################# | 100% 
+_openmp_mutex-5.1    | 21 KB     |                                                                               |   0% _openmp_mutex-5.1    | 21 KB     | ############################################################################# | 100% _openmp_mutex-5.1    | 21 KB     | ############################################################################# | 100% 
+certifi-2022.6.15    | 153 KB    |                                                                               |   0% certifi-2022.6.15    | 153 KB    | ################1                                                             |  21% certifi-2022.6.15    | 153 KB    | ############################################################################# | 100% 
+numpy-1.22.3         | 10 KB     |                                                                               |   0% numpy-1.22.3         | 10 KB     | ############################################################################# | 100% numpy-1.22.3         | 10 KB     | ############################################################################# | 100% 
+python-3.10.4        | 24.2 MB   |                                                                               |   0% python-3.10.4        | 24.2 MB   |                                                                               |   0% python-3.10.4        | 24.2 MB   | ##7                                                                           |   4% python-3.10.4        | 24.2 MB   | #####4                                                                        |   7% python-3.10.4        | 24.2 MB   | ########4                                                                     |  11% python-3.10.4        | 24.2 MB   | ###########5                                                                  |  15% python-3.10.4        | 24.2 MB   | ##############4                                                               |  19% python-3.10.4        | 24.2 MB   | #################4                                                            |  23% python-3.10.4        | 24.2 MB   | ####################9                                                         |  27% python-3.10.4        | 24.2 MB   | ########################3                                                     |  32% python-3.10.4        | 24.2 MB   | ###########################6                                                  |  36% python-3.10.4        | 24.2 MB   | ###############################2                                              |  41% python-3.10.4        | 24.2 MB   | ##################################9                                           |  45% python-3.10.4        | 24.2 MB   | ######################################9                                       |  51% python-3.10.4        | 24.2 MB   | ##########################################6                                   |  55% python-3.10.4        | 24.2 MB   | ###############################################1                              |  61% python-3.10.4        | 24.2 MB   | ###################################################6                          |  67% python-3.10.4        | 24.2 MB   | ########################################################2                     |  73% python-3.10.4        | 24.2 MB   | ############################################################9                 |  79% python-3.10.4        | 24.2 MB   | #################################################################5            |  85% python-3.10.4        | 24.2 MB   | ######################################################################9       |  92% python-3.10.4        | 24.2 MB   | ############################################################################5 |  99% python-3.10.4        | 24.2 MB   | ############################################################################# | 100% 
+Preparing transaction: / - \ done
+Verifying transaction: / - \ | / - \ | done
+Executing transaction: - \ | / - \ | / - \ | / done
+#
+# To activate this environment, use
+#
+#     $ conda activate snowflakes
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda activate snowflakes
+(snowflakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda info --envs
+# conda environments:
+#
+base                     /home/janaki/miniconda3
+snowflakes            *  /home/janaki/miniconda3/envs/snowflakes
+
+(snowflakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda activate
+(base) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda create --name snakes python=3.9
+Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | done
+
+## Package Plan ##
+
+  environment location: /home/janaki/miniconda3/envs/snakes
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pip-22.1.2                 |   py39h06a4308_0         2.5 MB
+    python-3.9.12              |       h12debd9_1        19.2 MB
+    ------------------------------------------------------------
+                                           Total:        21.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2022.07.19-h06a4308_0
+  certifi            pkgs/main/linux-64::certifi-2022.6.15-py39h06a4308_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  ncurses            pkgs/main/linux-64::ncurses-6.3-h5eee18b_3
+  openssl            pkgs/main/linux-64::openssl-1.1.1q-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-22.1.2-py39h06a4308_0
+  python             pkgs/main/linux-64::python-3.9.12-h12debd9_1
+  readline           pkgs/main/linux-64::readline-8.1.2-h7f8727e_1
+  setuptools         pkgs/main/linux-64::setuptools-61.2.0-py39h06a4308_0
+  sqlite             pkgs/main/linux-64::sqlite-3.38.5-hc218d9a_0
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0
+  tzdata             pkgs/main/noarch::tzdata-2022a-hda174b7_0
+  wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7f8727e_1
+  zlib               pkgs/main/linux-64::zlib-1.2.12-h7f8727e_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+pip-22.1.2           | 2.5 MB    |                                                                               |   0% pip-22.1.2           | 2.5 MB    | 4                                                                             |   1% pip-22.1.2           | 2.5 MB    | ###4                                                                          |   4% pip-22.1.2           | 2.5 MB    | ###################6                                                          |  25% pip-22.1.2           | 2.5 MB    | ##############################################################7               |  82% pip-22.1.2           | 2.5 MB    | ############################################################################# | 100% 
+python-3.9.12        | 19.2 MB   |                                                                               |   0% python-3.9.12        | 19.2 MB   | #3                                                                            |   2% python-3.9.12        | 19.2 MB   | ##########1                                                                   |  13% python-3.9.12        | 19.2 MB   | ###################                                                           |  25% python-3.9.12        | 19.2 MB   | ##########################1                                                   |  34% python-3.9.12        | 19.2 MB   | ###################################1                                          |  46% python-3.9.12        | 19.2 MB   | ##########################################3                                   |  55% python-3.9.12        | 19.2 MB   | ###################################################4                          |  67% python-3.9.12        | 19.2 MB   | ###########################################################1                  |  77% python-3.9.12        | 19.2 MB   | ####################################################################2         |  89% python-3.9.12        | 19.2 MB   | ###########################################################################8  |  99% python-3.9.12        | 19.2 MB   | ############################################################################# | 100% 
+Preparing transaction: - \ done
+Verifying transaction: / - \ | / - \ done
+Executing transaction: / - \ | / - \ | / - done
+#
+# To activate this environment, use
+#
+#     $ conda activate snakes
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda activate snakes
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda info --envs
+# conda environments:
+#
+base                     /home/janaki/miniconda3
+snakes                *  /home/janaki/miniconda3/envs/snakes
+snowflakes               /home/janaki/miniconda3/envs/snowflakes
+
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ python --version
+Python 3.9.12
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda deactivate
+(base) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda activate snakes
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda search beatifulsoup4
+Loading channels: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+No match found for: beatifulsoup4. Search: *beatifulsoup4*
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - beatifulsoup4
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/linux-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/linux-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ [K(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda install beatuf[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kconda search beatifulsoup4[Cutifulsoup4
+Loading channels: - \ | / - \ | / - \ | / - \ | done
+# Name                       Version           Build  Channel             
+beautifulsoup4                 4.6.0          py27_1  pkgs/main           
+beautifulsoup4                 4.6.0  py27h3f86ba9_1  pkgs/main           
+beautifulsoup4                 4.6.0  py35h442a8c9_1  pkgs/main           
+beautifulsoup4                 4.6.0          py36_1  pkgs/main           
+beautifulsoup4                 4.6.0  py36h49b8c8c_1  pkgs/main           
+beautifulsoup4                 4.6.0          py37_1  pkgs/main           
+beautifulsoup4                 4.6.1          py27_0  pkgs/main           
+beautifulsoup4                 4.6.1          py35_0  pkgs/main           
+beautifulsoup4                 4.6.1          py36_0  pkgs/main           
+beautifulsoup4                 4.6.1          py37_0  pkgs/main           
+beautifulsoup4                 4.6.3          py27_0  pkgs/main           
+beautifulsoup4                 4.6.3          py35_0  pkgs/main           
+beautifulsoup4                 4.6.3          py36_0  pkgs/main           
+beautifulsoup4                 4.6.3          py37_0  pkgs/main           
+beautifulsoup4                 4.7.1          py27_1  pkgs/main           
+beautifulsoup4                 4.7.1          py36_1  pkgs/main           
+beautifulsoup4                 4.7.1          py37_1  pkgs/main           
+beautifulsoup4                 4.8.0          py27_0  pkgs/main           
+beautifulsoup4                 4.8.0          py36_0  pkgs/main           
+beautifulsoup4                 4.8.0          py37_0  pkgs/main           
+beautifulsoup4                 4.8.1          py27_0  pkgs/main           
+beautifulsoup4                 4.8.1          py36_0  pkgs/main           
+beautifulsoup4                 4.8.1          py37_0  pkgs/main           
+beautifulsoup4                 4.8.1          py38_0  pkgs/main           
+beautifulsoup4                 4.8.2          py27_0  pkgs/main           
+beautifulsoup4                 4.8.2          py36_0  pkgs/main           
+beautifulsoup4                 4.8.2          py37_0  pkgs/main           
+beautifulsoup4                 4.8.2          py38_0  pkgs/main           
+beautifulsoup4                 4.9.0          py36_0  pkgs/main           
+beautifulsoup4                 4.9.0          py37_0  pkgs/main           
+beautifulsoup4                 4.9.0          py38_0  pkgs/main           
+beautifulsoup4                 4.9.1          py36_0  pkgs/main           
+beautifulsoup4                 4.9.1  py36h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.1          py37_0  pkgs/main           
+beautifulsoup4                 4.9.1  py37h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.1          py38_0  pkgs/main           
+beautifulsoup4                 4.9.1  py38h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.1  py39h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.3    pyha847dfd_0  pkgs/main           
+beautifulsoup4                 4.9.3    pyhb0f4dca_0  pkgs/main           
+beautifulsoup4                4.10.0    pyh06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1 py310h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1  py37h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1  py38h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1  py39h06a4308_0  pkgs/main           
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda install beautifulsoup4
+Collecting package metadata (current_repodata.json): - \ | / - \ done
+Solving environment: / done
+
+## Package Plan ##
+
+  environment location: /home/janaki/miniconda3/envs/snakes
+
+  added / updated specs:
+    - beautifulsoup4
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    beautifulsoup4-4.11.1      |   py39h06a4308_0         185 KB
+    soupsieve-2.3.1            |     pyhd3eb1b0_0          34 KB
+    ------------------------------------------------------------
+                                           Total:         219 KB
+
+The following NEW packages will be INSTALLED:
+
+  beautifulsoup4     pkgs/main/linux-64::beautifulsoup4-4.11.1-py39h06a4308_0
+  soupsieve          pkgs/main/noarch::soupsieve-2.3.1-pyhd3eb1b0_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+soupsieve-2.3.1      | 34 KB     |                                          |   0% soupsieve-2.3.1      | 34 KB     | ##################7                      |  47% soupsieve-2.3.1      | 34 KB     | ######################################## | 100% 
+beautifulsoup4-4.11. | 185 KB    |                                          |   0% beautifulsoup4-4.11. | 185 KB    | ###4                                     |   9% beautifulsoup4-4.11. | 185 KB    | #############8                           |  35% beautifulsoup4-4.11. | 185 KB    | ######################################## | 100% 
+Preparing transaction: \ done
+Verifying transaction: / done
+Executing transaction: \ | / - \ | done
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda list
+# packages in environment at /home/janaki/miniconda3/envs/snakes:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_openmp_mutex             5.1                       1_gnu  
+beautifulsoup4            4.11.1           py39h06a4308_0  
+ca-certificates           2022.07.19           h06a4308_0  
+certifi                   2022.6.15        py39h06a4308_0  
+ld_impl_linux-64          2.38                 h1181459_1  
+libffi                    3.3                  he6710b0_2  
+libgcc-ng                 11.2.0               h1234567_1  
+libgomp                   11.2.0               h1234567_1  
+libstdcxx-ng              11.2.0               h1234567_1  
+ncurses                   6.3                  h5eee18b_3  
+openssl                   1.1.1q               h7f8727e_0  
+pip                       22.1.2           py39h06a4308_0  
+python                    3.9.12               h12debd9_1  
+readline                  8.1.2                h7f8727e_1  
+setuptools                61.2.0           py39h06a4308_0  
+soupsieve                 2.3.1              pyhd3eb1b0_0  
+sqlite                    3.38.5               hc218d9a_0  
+tk                        8.6.12               h1ccaba5_0  
+tzdata                    2022a                hda174b7_0  
+wheel                     0.37.1             pyhd3eb1b0_0  
+xz                        5.2.5                h7f8727e_1  
+zlib                      1.2.12               h7f8727e_2  
+(snakes) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda deactivate
+(base) ]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ conda deactivate
+]0;janaki@TIGER03521: ~[01;32mjanaki@TIGER03521[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2022-07-28 10:45:43+05:30 [COMMAND_EXIT_CODE="0"]
