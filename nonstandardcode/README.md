@@ -14,5 +14,11 @@ The following techniques have been used:
  - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
  - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
 
+## activating conda environment
+-create mle-dev environment and install required packages
+-run the python script using below command
+-export the .yml file 
+
+
 ## To excute the script
 python < scriptname.py >
