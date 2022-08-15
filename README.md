@@ -21,6 +21,6 @@ Command to activate environment
 conda activate mle-dev
 
 command to create env.yml file
-conda env export | grep -v "^prefix: " > env.yml
+conda env create -f env.yml
 
 
