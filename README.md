@@ -21,6 +21,18 @@ Command to activate environment
 conda activate mle-dev
 
 command to create env.yml file
-conda env export | grep -v "^prefix: " > env.yml
+conda env create -f env.yml
 
+## to install black and isort
+pip install black
+pip install isort
+
+## to run python file using black and isort
+black < nonstandardcode.py >
+isort < nonstandardcode.py >
+
+## installing flake8 and checking the python file with flake8
+pip install flake8
+
+flake8 --max-linelength=88 nonstandardcode.py
 
