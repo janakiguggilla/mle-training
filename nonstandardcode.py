@@ -1,11 +1,9 @@
 import os
 import tarfile
 
-import matplotlib as mpl
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from six.moves import urllib
+import six
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
 HOUSING_PATH = os.path.join("datasets", "housing")
@@ -75,11 +73,13 @@ housing.plot(kind="scatter", x="longitude", y="latitude", alpha=0.1)
 
 corr_matrix = housing.corr()
 corr_matrix["median_house_value"].sort_values(ascending=False)
-housing["rooms_per_household"] = housing["total_rooms"]/housing["households"]
-housing["bedrooms_per_room"] = housing["total_bedrooms"]/housing["total_rooms"]
-housing["population_per_household"]=housing["population"]/housing["households"]
+housing["rooms_per_household"] = housing["total_rooms"] / housing["households"]
+housing["bedrooms_per_room"] = housing["total_bedrooms"] / housing["total_rooms"]
+housing["population_per_household"] = housing["population"] / housing["households"]
 
-housing = strat_train_set.drop("median_house_value", axis=1) # drop labels for training set
+housing = strat_train_set.drop(
+    "median_house_value", axis=1
+)  # drop labels for training set
 housing_labels = strat_train_set["median_house_value"].copy()
 
 from sklearn.impute import SimpleImputer
@@ -91,11 +91,14 @@ housing_num = housing.drop("ocean_proximity", axis=1)
 imputer.fit(housing_num)
 X = imputer.transform(housing_num)
 
-housing_tr = pd.DataFrame(X, columns=housing_num.columns,
-                          index=housing.index)
-housing_tr["rooms_per_household"] = housing_tr["total_rooms"]/housing_tr["households"]
-housing_tr["bedrooms_per_room"] = housing_tr["total_bedrooms"]/housing_tr["total_rooms"]
-housing_tr["population_per_household"]=housing_tr["population"]/housing_tr["households"]
+housing_tr = pd.DataFrame(X, columns=housing_num.columns, index=housing.index)
+housing_tr["rooms_per_household"] = housing_tr["total_rooms"] / housing_tr["households"]
+housing_tr["bedrooms_per_room"] = (
+    housing_tr["total_bedrooms"] / housing_tr["total_rooms"]
+)
+housing_tr["population_per_household"] = (
+    housing_tr["population"] / housing_tr["households"]
+)
 
 housing_cat = housing[["ocean_proximity"]]
 housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
@@ -185,7 +188,7 @@ final_model = grid_search.best_estimator_
 X_test = strat_test_set.drop("median_house_value", axis=1)
 y_test = strat_test_set["median_house_value"].copy()
 
-X_test_num = X_test.drop('ocean_proximity', axis=1)
+X_test_num = X_test.drop("ocean_proximity", axis=1)
 X_test_prepared = imputer.transform(X_test_num)
 X_test_prepared = pd.DataFrame(
     X_test_prepared, columns=X_test_num.columns, index=X_test.index
