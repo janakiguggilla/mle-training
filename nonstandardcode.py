@@ -9,12 +9,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn.model_selection import (
-    GridSearchCV,
-    RandomizedSearchCV,
-    StratifiedShuffleSplit,
-    train_test_split,
-)
+from sklearn.model_selection import (GridSearchCV, RandomizedSearchCV,
+                                     StratifiedShuffleSplit, train_test_split)
 from sklearn.tree import DecisionTreeRegressor
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
@@ -136,7 +132,7 @@ tree_rmse = np.sqrt(tree_mse)
 
 
 param_distribs = {
-    "n_estimators": randint(low=1, high=200),
+    "n_estimators": randint(low=1, high=200),  # type: ignore
     "max_features": randint(low=1, high=8),
 }
 
