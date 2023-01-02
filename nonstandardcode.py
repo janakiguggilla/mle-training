@@ -9,8 +9,12 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn.model_selection import (GridSearchCV, RandomizedSearchCV,
-                                     StratifiedShuffleSplit, train_test_split)
+from sklearn.model_selection import (
+    GridSearchCV,
+    RandomizedSearchCV,
+    StratifiedShuffleSplit,
+    train_test_split,
+)
 from sklearn.tree import DecisionTreeRegressor
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
@@ -49,7 +53,7 @@ split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 strat_test_set = 0
 strat_train_set = 0
 for train_index, test_index in split.split(housing, housing["income_cat"]):
-    strat_train_set = housing.loc[train_index]
+    strat_train_set = housing.loc[train_index]  # type: ignore
     strat_test_set = housing.loc[test_index]
 
 
@@ -76,7 +80,7 @@ compare_props["Strat. %error"] = (
 for set_ in (strat_train_set, strat_test_set):
     set_.drop("income_cat", axis=1, inplace=True)  # type: ignore
 housing = strat_train_set.copy()  # type: ignore
-housing.plot(kind="scatter", x="longitude", y="latitude")
+housing.plot(kind="scatter", x="longitude", y="latitude")  # type: ignore
 housing.plot(kind="scatter", x="longitude", y="latitude", alpha=0.1)
 
 corr_matrix = housing.corr()
