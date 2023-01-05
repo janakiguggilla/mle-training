@@ -1,0 +1,16 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "flake8.args": [
+        "--max-line-length =120",
+        "--ignore=E211,E999,F401,F821,W503"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    "editor.renderWhitespace": "trailing",
+    "python.formatting.provider": "black"
+}
