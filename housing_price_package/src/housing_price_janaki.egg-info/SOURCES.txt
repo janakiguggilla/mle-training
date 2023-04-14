@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/housing_price_janaki/__init__.py
+src/housing_price_janaki/ingest_data.py
+src/housing_price_janaki/score.py
+src/housing_price_janaki/train.py
+src/housing_price_janaki.egg-info/PKG-INFO
+src/housing_price_janaki.egg-info/SOURCES.txt
+src/housing_price_janaki.egg-info/dependency_links.txt
+src/housing_price_janaki.egg-info/top_level.txt
+src/mlflow_test/flow.py
+src/tests/functional_tests/test_ingest_data.py
+src/tests/unit_tests/test_score.py
+src/tests/unit_tests/test_train.py
