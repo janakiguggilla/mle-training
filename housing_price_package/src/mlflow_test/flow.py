@@ -1,7 +1,9 @@
 import os
 
 import mlflow
+
 from housing_price_janaki import ingest_data, score, train
+
 
 # mlflow server --backend-store-uri mlruns/ --default-artifact-root mlruns/ \
 # --host 127.0.0.1 --port 5000
@@ -11,7 +13,9 @@ mlflow.set_tracking_uri(remote_server_uri)  # or set the MLFLOW_TRACKING_URI in 
 # experiment_id = "Single_Run"
 # mlflow.set_experiment("Single_Run")
 # exp_name = "housing_price_" + str(random.randint(1, 100))
+
 experiment = mlflow.set_experiment("housing_price_janaki")
+
 
 # parent (model scoring)
 with mlflow.start_run(
@@ -22,7 +26,9 @@ with mlflow.start_run(
 ) as parent_run:
     mlflow.log_param("parent", "yes")
     flag_var, rmse, mae, r2 = score.eval_metrics(
+
         data_path=os.path.join("housing_price_janaki/datasets", "housing"),
+
         output_path=os.path.join("../mlruns"),
         model_path=os.path.join("../artifacts"),
     )
@@ -41,7 +47,9 @@ with mlflow.start_run(
     ) as child_run:
         mlflow.log_param("child_1", "yes")
 
+
         flag_var = ingest_data.prepare_train(os.path.join("housing_price_janaki/datasets", "housing"))
+
         mlflow.log_param("dataset_downloaded", flag_var)
         mlflow.log_param("train_val_created", flag_var)
         print("Save to: {}".format(mlflow.get_artifact_uri()))
@@ -56,7 +64,9 @@ with mlflow.start_run(
         mlflow.log_param("child_2", "yes")
 
         flag_var = train.training_data(
+
             os.path.join("housing_price_janaki/datasets", "housing"),
+
             os.path.join("../artifacts"),
         )
 

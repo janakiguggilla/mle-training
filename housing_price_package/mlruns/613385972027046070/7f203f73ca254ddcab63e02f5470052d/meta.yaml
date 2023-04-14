@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/613385972027046070/7f203f73ca254ddcab63e02f5470052d/artifacts
+end_time: 1675178908052
+entry_point_name: ''
+experiment_id: '613385972027046070'
+lifecycle_stage: active
+run_id: 7f203f73ca254ddcab63e02f5470052d
+run_name: PARENT_RUN
+run_uuid: 7f203f73ca254ddcab63e02f5470052d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675178907866
+status: 4
+tags: []
+user_id: janaki

@@ -1,6 +1,8 @@
 import unittest
 
+
 from housing_price_janaki import score
+
 
 
 def fun(x):
@@ -13,7 +15,9 @@ class MyTest(unittest.TestCase):
 
     def test_ingest_data(self):
         flag_var, rmse, mae, r2 = score.eval_metrics(
+
             "housing_price_janaki/datasets/housing/",
+
             "../artifacts/",
             "../artifacts/",
         )

@@ -1,7 +1,9 @@
 import unittest
 from os.path import exists
 
+
 from housing_price_janaki import ingest_data
+
 
 
 def fun(x):
@@ -14,12 +16,14 @@ class MyTest(unittest.TestCase):
 
     def test_ingest_data(self):
         self.assertTrue(
+
             ingest_data.prepare_train("housing_price_janaki/datasets/housing/"),
             "Function was not properly executed! Please check the code.",
         )
         train_exists = exists("housing_price_janaki/datasets/housing/train/train.csv")
         self.assertTrue(train_exists, "File not exists! Please check the code!")
         test_exists = exists("housing_price_janaki/datasets/housing/test/test.csv")
+
         self.assertTrue(test_exists, "File not exists! Please check the code!")
 
 

@@ -14,7 +14,9 @@ with open('LICENSE.txt') as f:
     license = f.read()
 
 setup(
+
     name="housing_price_janaki",
+
     version="0.0.1",
     package_dir={"": "src"},
     description="Housing price prediction",
