@@ -1,7 +1,9 @@
 import unittest
 from os.path import exists
 
-from housing_price import train
+
+from housing_price_janaki import train
+
 
 
 def fun(x):
@@ -15,7 +17,9 @@ class MyTest(unittest.TestCase):
     def test_ingest_data(self):
         self.assertTrue(
             train.training_data(
-                "housing_price/datasets/housing/", "../artifacts/"
+
+                "housing_price_janaki/datasets/housing/", "../artifacts/"
+
             ),
             "Code not executed properly. Please check the code and rectify errors!",
         )

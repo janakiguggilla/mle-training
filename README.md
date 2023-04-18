@@ -36,3 +36,15 @@ pip install flake8
 
 flake8 --max-linelength=88 nonstandardcode.py
 
+## to build docker container
+first create Dockeerfile
+and build container using===>  docker build -t image name
+
+## to run the image
+docker run --name containername imagename
+
+##push docker image
+docker push imagename
+##pulling
+docker pull imagename
+
